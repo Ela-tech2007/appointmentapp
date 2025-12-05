@@ -42,8 +42,6 @@ pipeline:
                       echo 'test'
                       npm install -g @angular/cli
                       echo 'starting build'
-                      rm -rf node_modules
-                      rm package-lock.json
                       npm install
                       ng serve
   delegateSelectors:
