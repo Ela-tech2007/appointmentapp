@@ -42,3 +42,5 @@ pipeline:
                       echo 'test'
                       npm install -g @angular/cli
                       ng build
+  delegateSelectors:
+    - gcp-delegate
