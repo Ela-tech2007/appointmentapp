@@ -36,12 +36,11 @@ pipeline:
                   identifier: Run_1
                   spec:
                     connectorRef: Docker_connector
-                    image: node:20-alpine
+                    image: node:12.12.0-alpine
                     shell: Sh
                     command: |-
                       echo 'test'
                       npm install -g @angular/cli
                       echo 'starting build'
-                      ng build
   delegateSelectors:
     - gcp-delegate
