@@ -35,6 +35,8 @@ pipeline:
                   name: Run_1
                   identifier: Run_1
                   spec:
+                    connectorRef: Docker_connector
+                    image: node:12.12.0-alpine
                     shell: Sh
                     command: |-
                       echo 'test'
